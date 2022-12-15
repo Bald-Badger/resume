@@ -20,16 +20,16 @@
 
 \ProvidesClass{resume}[2010/07/10 v0.9 Resume class]
 
-\LoadClass[11pt,letterpaper]{article} % Font size and paper type
+\LoadClass[10pt,letterpaper]{article} % Font size and paper type
 
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen} % Required for ifthenelse statements
 \usepackage[
-    left    =0.4 in,
-    top     =0.4 in,
-    right   =0.4 in,
-    bottom  =0.4 in
+    left    =0.6 in,
+    top     =0.6 in,
+    right   =0.6 in,
+    bottom  =0.6 in
 ]{geometry} % Document margins
 \usepackage{times} % use Times New Roman
 \usepackage{hyperref}
