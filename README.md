@@ -12,8 +12,8 @@ sudo apt-get install texlive-latex-extra
 ```
 
 ## Install package (WSL):
-just a workaround that the LaTeX Workshop extension on vscode can't find packages
-it's really big (~6G install space)
+just a workaround that the LaTeX Workshop extension on vscode can't find packages;
+It's really big (~6G install space)
 TODO: use step from "Install package (local Linux)" and find a fix
 ```
 sudo apt-get install texlive-full

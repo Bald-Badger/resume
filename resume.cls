@@ -25,7 +25,13 @@
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen} % Required for ifthenelse statements
-
+\usepackage[
+    left    =0.4 in,
+    top     =0.8 in,
+    right   =0.4 in,
+    bottom  =0.4 in
+]{geometry} % Document margins
+\usepackage{times} % use Times New Roman
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
@@ -33,6 +39,7 @@
     filecolor=magenta,      
     urlcolor=blue,
 }
+
 
 \pagestyle{empty} % Suppress page numbers
 
@@ -43,7 +50,7 @@
 \def \name#1{\def\@name{#1}} % Defines the \name command to set name
 \def \@name {} % Sets \@name to empty by default
 
-\def \addressSep {$\diamond$} % Set default address separator to a diamond
+\def \addressSep {$|$} % Set default address separator to a "|"
 
 % One, two or three address lines can be specified 
 \let \@addressone \relax
@@ -75,7 +82,7 @@
 % \printname is used to print the name as a page header
 \def \printname {
   \begingroup
-    \hfil{\MakeUppercase{\namesize\bf \@name}}\hfil
+    \hfil{{\namesize\bf \@name}}\hfil
     \nameskip\break
   \endgroup
 }
@@ -132,7 +139,7 @@
 }
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
-\def\namesize{\LARGE} % Size of the name at the top of the document
+\def\namesize{\Huge} % Size of the name at the top of the document
 \def\addressskip{\smallskip} % The space between the two address (or phone/email) lines
 \def\sectionlineskip{\medskip} % The space above the horizontal line for each section 
 \def\nameskip{\medskip} % The space after your name at the top
