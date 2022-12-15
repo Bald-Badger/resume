@@ -3,4 +3,4 @@ all:
 
 clean:
 	echo "deleting intermediate files"
-	rm ./*.pdf ./*.log ./*.out ./*.aux ./*.fdb_latexmk ./*.fls ./*.gz
+	rm -f ./*.pdf ./*.log ./*.out ./*.aux ./*.fdb_latexmk ./*.fls ./*.gz
