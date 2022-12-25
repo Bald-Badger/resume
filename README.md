@@ -11,22 +11,15 @@ sudo apt-get install texlive-fonts-recommended
 sudo apt-get install texlive-latex-extra
 ```
 
-## Install package (WSL):
-just a workaround that the LaTeX Workshop extension on vscode can't find packages;
-It's really big (~6G install space)
-TODO: use step from "Install package (local Linux)" and find a fix
-```
-sudo apt-get install texlive-full
-```
-
 ## Compile - terminal
 to compile, run
 ```make ```
 to clean, run
 ```make clean```
 
-## Edit - vscode
-I used the LaTeX Workshop extension on vscode 
+## Compile & Edit - vscode
+I used the LaTeX Workshop extension on vscode.
+
 Overleaf is pretty neat, but I ditched for not supporting Git sync for free accounts
 
 LaTeX Workshop extension reference:
@@ -39,3 +32,11 @@ make sure LaTex binary is in PATH:
 simply press ctrl+s to compile and see preview
 
 I used vscode-pdf for preview
+
+## Install package (WSL):
+If you run vscode via WSL and the LaTeX Workshop extension plugin complains, 
+This is just a workaround that the LaTeX Workshop extension on vscode can't find packages;
+It's really big (~6G install space)
+TODO: use step from "Install package (local Linux)" and find a fix
+
+`sudo apt-get install texlive-full`
