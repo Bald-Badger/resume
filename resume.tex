@@ -1,5 +1,5 @@
 \documentclass{resume} % Use the custom resume.cls style
-
+\newcommand{\myitemsep}{\itemsep -0.6em}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{Shuai Zhang}
@@ -32,36 +32,50 @@
 
   \begin{rSection}{PROFESSIONAL EXPERIENCE}
 
-    \textbf{Arm Inc.}                           \hfill Chandler, AZ\\
-    \emph{Graduate Verification Engineer}       \hfill Feb 2023 - Mar 2024\\
+    % Engineer
+    \textbf{Arm Inc.}                           \hfill Chandler, AZ         \\
+    \emph{Engineer}                             \hfill Apr 2024 - Present   \\
     \LineShrinkBeforeItem
     \begin{itemize} [leftmargin=1em]
-      \itemsep -0.6em
+      \myitemsep
+      \item Owned verification of the Request Node (RNID) module in the Arm Coherent Mesh Network.
+      \item Collaborated with the RTL team to develop detailed test plans for new CMN features.
+      \item Coordinated with the top-level team to ensure regression stability and health.
+      \item Developed unit-level UVM testbenches for RNID functional verification.
+      \item Investigated and debugged regression failures in RNID, CCG, and top-level environments.
+      \item Defined and implemented functional and statistical coverage metrics, driving coverage closure.
+    \end{itemize}
+
+    % Graduate Verification Engineer
+    \textbf{Arm Inc.}                           \hfill Chandler, AZ         \\
+    \emph{Graduate Verification Engineer}       \hfill Feb 2023 - Mar 2024  \\
+    \LineShrinkBeforeItem
+    \begin{itemize} [leftmargin=1em]
+      \myitemsep
       \item Developing comprehensive verification strategies for the CPU memorty system
       \item Constructing System Verilog/UVM and formal testbenches for CPU memsys functional verification
       \item Developing and improving stimulus, test cases, testbench checkers and System Verilog assertions
       \item Debugging regression failures in simulation and formal and report bugs in the design under test
       \item Defining and implementing functional and statistical coverage and improving the testbench for coverage closure
-      \item Documenting and maintaining testplans and testbench specifications.
     \end{itemize}
 
-    \textbf{Arm Inc.}                           \hfill Chandler, AZ\\
-    \emph{CPU Verification Engineer Intern}     \hfill May 2022 - Aug 2022\\
+    % 2022 intern
+    \textbf{Arm Inc.}                           \hfill Chandler, AZ         \\
+    \emph{CPU Verification Engineer Intern}     \hfill May 2022 - Aug 2022  \\
     \LineShrinkBeforeItem
     \begin{itemize} [leftmargin=1em]
-      \itemsep -0.6em
+      \myitemsep
       \item Migrated event/trace-based verification workflow from A class CPU to M class CPU
       \item Captured memory system RTL signal and compiled the signal into linked events
       \item Traced memory transaction events, and visualized them in an intuitive manner for easier debugging
     \end{itemize}
 
-    %\vspace*{-0.5em}
-
-    \textbf{Arm Inc.}                           \hfill Chandler, AZ\\
-    \emph{CPU Verification Engineer Intern}     \hfill May 2021 - Aug 2021\\
+    % 2021 intern
+    \textbf{Arm Inc.}                           \hfill Chandler, AZ         \\
+    \emph{CPU Verification Engineer Intern}     \hfill May 2021 - Aug 2021  \\
     \LineShrinkBeforeItem
     \begin{itemize} [leftmargin=1em]
-      \itemsep -0.6em
+      \myitemsep
       \item Optimized run-time performance of interrupt controller testbench
       \item Identified performance bottleneck and enhanced UVM testbench resource utilization
       \item Collaborated and Improved workflow efficiency by reducing testbench runtime overhead by 25\%
@@ -69,50 +83,30 @@
 
   \end{rSection}
 
-
-  %----------------------------------------------------------------------------------------
-  %   ENGINEERING PROJECTS
-  %----------------------------------------------------------------------------------------
-
-  \begin{rSection}{ENGINEERING PROJECTS}
-
-    \textbf{RISC-V Processor \& SoC}        \hfill May 2021 - Dec 2022\\
-    \LineShrinkBeforeItem
-    \begin{itemize} [leftmargin=1em]
-      \itemsep -0.6em
-      \item Designed and verified a functional 32-bit, RISC-V processor on Xilinx Artix-7 FPGA
-      \item Formally verified, synthesizable, bootable, cached, serial I/O, SDRAM controller
-      \item Build SoC System; Unified AXI4Lite bus / interconnect; AXI4Lite controller / peripherals
-    \end{itemize}
-
-    %\vspace*{-0.5em}
-
-  \end{rSection}
-
   %----------------------------------------------------------------------------------------
   %   RESEARCH EXPERIENCE
   %----------------------------------------------------------------------------------------
 
-  \begin{rSection}{Extra-Curricular Activities}
+  \begin{rSection}{Research Experience}
 
-    \textbf{Columbia University: Creative Machines lab}         \hfill Jun 2020 - Dec 2020\\
+    \textbf{Columbia University: Creative Machines lab}         \hfill Jun 2020 - Dec 2020 \\
     \LineShrinkBeforeItem
     \begin{itemize} [leftmargin=1em]
-      \itemsep -0.6em
-      \item Member of open-source ultrasonic flaw detection system research group
-      \item Customized embedded system functions: ADC/DAC; data flow; data processing
-      \item Cooperated on micro-controller code run-time performance optimization
+      \myitemsep
+      \item Contributed to an open-source research group focused on ultrasonic flaw detection systems.
+      \item Customized embedded system functions, including ADC/DAC, data flow, and data processing.
+      \item Optimized microcontroller code for improved run-time performance.
     \end{itemize}
 
     %\vspace*{-0.5em}
 
-    \textbf{University of Wisconsin - Madison: Photonics lab}   \hfill Apr 2019 - May 2021\\
+    \textbf{University of Wisconsin - Madison: Photonics lab}   \hfill Apr 2019 - May 2021 \\
     \LineShrinkBeforeItem
     \begin{itemize} [leftmargin=1em]
-      \itemsep -0.6em
-      \item Member of ML-based magnetic levitation research group
-      \item Collaborated on embedded system data acquisition \& digital signal processing
-      \item Enhanced controlling system and circuitry, reduced response time overhead by 10 times
+      \myitemsep
+      \item Contributed to a research group developing an ML-based magnetic levitation system.
+      \item Collaborated on embedded system data acquisition and digital signal processing.
+      \item Enhanced control system and circuitry, achieving a 10x reduction in response time overhead.
     \end{itemize}
 
   \end{rSection}
@@ -122,7 +116,6 @@
     \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
       Programming Skills & Verilog / SystemVerilog, Python, C / C++, Java, CUDA, MATLAB                    \\
       EDA Tools          & QuestaSim / Visualizer, QuestaFormal, Quartus, Vivado, DVT, Verdi               \\
-      Courses            & Computer Architecture, Formal Verification, Hardware Security, Machine Learning \\
       Computer Skills    & Linux, Git, VS Code                                                             \\
     \end{tabular}\\
 
