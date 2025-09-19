@@ -4,12 +4,9 @@ Reference website:
 https://linuxhint.com/convert-tex-latex-file-to-pdf/
 There's a step that asked to install a huge package (1.6GB-ish), can skip that step
 
-```
-sudo apt-get install texlive
-sudo apt install texinfo
-sudo apt-get install texlive-fonts-recommended
-sudo apt-get install texlive-latex-extra
-```
+`
+sudo apt-get install texlive texinfo texlive-fonts-recommended texlive-latex-extra
+`
 
 ## Compile - terminal
 to compile, run
